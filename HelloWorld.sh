@@ -9,3 +9,5 @@ sudo cp pip.conf /etc/pip.conf # 放置系统级(site-wide)配置文件
 sudo pip3 install pip -U # 用清华源升级pip
 # sudo pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple # 产生配置文件：~/.config/pip/pip.conf
 echo y | sudo pip3 install numpy scipy pandas matplotlib ipython jupyter
+# 输入法
+echo y | sudo apt install ibus-pinyin
