@@ -1,4 +1,3 @@
 # hello-world
-learning to program with git hub
 
-Doctor student
+This bash file is used to setup an ubuntu system.
