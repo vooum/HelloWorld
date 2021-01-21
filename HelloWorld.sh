@@ -44,8 +44,8 @@ Install_ROOT() {
     sudo mkdir builddir installdir
     cd builddir
     sudo cmake -DCMAKE_INSTALL_PREFIX=../installdir $curPath/root-6.18.04
-    sed -i '/minuit2:/s/OFF/ON/g' CMakeCache.txt
-    sed -i '/pyroot_legacy:/s/OFF/ON/g' CMakeCache.txt
+    sudo sed -i '/minuit2:/s/OFF/ON/g' CMakeCache.txt
+    sudo sed -i '/pyroot_legacy:/s/OFF/ON/g' CMakeCache.txt
     sudo cmake --build . -- install
     sudo cp ~/.bashrc ~./bashrc.bak.vooum
     sudo echo 'source /opt/ROOT6/installdir/bin/thisroot.sh' >> ~./bashrc
