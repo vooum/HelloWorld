@@ -3,6 +3,10 @@
 # 默认参数 #
 threads=4 # 编译默认线程数
 ROOT=OFF
+CheckMATE=OFF
+
+# 系统版本号
+OS_release_num=$(lsb_release -r --short)
 
 # 高能程序包 #
 

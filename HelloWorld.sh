@@ -24,4 +24,3 @@ if [ $#  -eq 0 ];then
 else
     echo "No arguments needed"
 fi
-
