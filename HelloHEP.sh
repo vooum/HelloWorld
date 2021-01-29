@@ -52,7 +52,7 @@ Install_ROOT() {
     sudo cmake --build . -- install -j$threads
     if [ $? ];then # $?==0
         sudo cp ~/.bashrc ~/.bashrc.bak_by_vooum
-        sudo echo 'source /opt/root_v6.18.04/installdir/bin/thisroot.sh # ROOT' >> ~/.bashrc
+        sudo echo 'source /opt/root-6.18.04/installdir/bin/thisroot.sh # ROOT' >> ~/.bashrc
         cd /opt/root-6.18.04/installdir/bin
         ./root-config --has-minuit2
         echo "ROOT 安装成功"
